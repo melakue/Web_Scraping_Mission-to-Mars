@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content ="width=device-width", initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mission to Mars</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron text-center">
+          <h1>Mission to Mars</h1>
+          <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+        </div>
+    
+        <div class="row" id="mars-news">
+          <div class="col-md-12">
+              <h3><span style="font-weight:bold"> Mars News</span></h3>
+                <h4><span style="font-weight:bold">{{marsinfo.News_tile}}</span></h4>
+                    <p>{{marsinfo.Latest_p}} {{marsinfo.featured_image_URL}}</p>
+          </div>
+        </div>
+        <div class ="row" id="mars-image">
+            <div class = "col-md-8">
+                <h3><span style="font-weight:bold">Featured Mars Image</span></h3>
+                <img src = {{marsinfo.featured_image_URL}} alt ="Mars Image" style="width:auto;height:auto;"> 
+              </div>
+            <div class = "col-md-4">
+                    <h4><span style="font-weight:bold">Current Weather on Mars</span></h4>
+                    <p>{{marsinfo.Latest_tweet}}</p>
+                    <br>
+                    <h4 ><span style="font-weight:bold";style="text-indent: 50px";>Mars Facts</span></h4>
+                    <table col width="400"  border="1">
+                        <tr>
+                                <td></td>
+                                <td><span style="font-weight:bold">value</span>s</td>
+                                
+                              </tr>
+                              <tr>
+                                    <td><span style="font-weight:bold">description</span></td>
+                                    <td></td>
+                                    
+                                  </tr>
+                                  <!-- <tr> -->
+                          <!-- <td>Equatorial Diameter</td> -->
+                          <!-- <td>{{marsinfo.table['Equatorial Diameter']}}</td> -->
+                          
+                        <!-- </tr> -->
+                        <!-- <tr> -->
+                          <!-- <td>Polar Diameter</td> -->
+                          <!-- <td>{{marsinfo.table['Polar Diameter']}}</td> -->
+                         
+                        <!-- </tr> -->
+                        <tr>
+                            <td>Mass</td>
+                            <td>{{marsinfo.table['Mass']}}</td>
+                            
+                          </tr>
+                          <tr>
+                                  <td>moon</td>
+                                  <td>{{marsinfo.table['Moons']}}</td>
+                                  
+                                </tr>
+                                <tr>
+                                      <td>Orbit Distance</td>
+                                      <td>{{marsinfo.table['Orbit Distance']}}</td>
+                                      
+                                    </tr>
+                                    <tr>
+                                          <td>Orbit Period</td>
+                                          <td>{{marsinfo.table['Orbit Period']}}</td>
+                                          
+                                        </tr>
+                                        <tr>
+                                              <td>Surface Temprature</td>
+                                              <td>{{marsinfo.table['Surface Temperature']}}</td>
+                                              
+                                            </tr>
+                                            <tr>
+                                                  <td>First Record</td>
+                                                  <td>{{marsinfo.table['First Record']}}</td>
+                                                  
+                                                </tr>
+                                                <tr>
+                                                      <td>Recorded By</td>
+                                                      <td>{{marsinfo.table['Recorded By']}}</td>
+                                                      
+                                                    </tr>
+  
+  
+                        
+                      </table>
+                     
+                </div>
+        </div>
+        
+        
+        </div> -->
+        </div>
+        </div>
+      </div>
+</body>
+</html>
